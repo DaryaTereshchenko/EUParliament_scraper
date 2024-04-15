@@ -1,25 +1,26 @@
-# *Web crawler and scraper to extract texts of European parliament debates.*
+# *Web crawler and scraper to extract texts of European Parliament debates.*
 
 ## Description
-The [Crawler](https://github.com/DaryaTereshchenko/EUParliament_scraper/blob/main/src/crawler.py) is a python programs, aims to be used for iterating over the dropdown menu on the [page](https://www.europarl.europa.eu/plenary/en/debates-video.html#sidesForm), and extracting the links of pertinent debates and statements. The links are then saved in a JSON file.
+The [Crawler](https://github.com/DaryaTereshchenko/EUParliament_scraper/blob/main/src/crawler.py) is used to iterate over the dropdown menu on the [page](https://www.europarl.europa.eu/plenary/en/debates-video.html#sidesForm), and extract links with pertinent debates and presentations. 
+The links are then saved in a JSON file.
 
 ## Example Usage - Crowler 
-Call the file with the following arguments:
+Call the `crawler.py` file with the following arguments:
 ```python crawler.py```
 **You will be prompted to enter:**
-- the URL of the webpage;
-- the query to search for; 
-- the directory to save the links;
-- the filename;
+- a URL of the webpage;
+- a query (topic) to search for; 
+- a directory to save the links;
+- a filename;
 
 ## Example Usage - Scraper
-Once you have the necessary links, you can use the [scraper](https://github.com/DaryaTereshchenko/EUParliament_scraper/blob/main/src/scraper.py) to extract the text from the debates.
+Once you have the necessary links, you can use the [scraper](https://github.com/DaryaTereshchenko/EUParliament_scraper/blob/main/src/scraper.py) to extract texts from the urls.
 
-Call the file with the following arguments:
+Call the file `scraper.py` with the following arguments:
 ```python scraper.py```
 **You will be prompted to enter:**
-- the directory where the links are saved;
-- the file name to save the final csv file;
+- a directory where the links are saved;
+- a file name to save a final csv file;
 
 **The extracted data is stored in a csv file with the following columns:**
 - title of a debate or presentation;
