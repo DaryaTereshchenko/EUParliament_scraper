@@ -2,7 +2,7 @@
 
 ## Description
 The [Crawler](https://github.com/DaryaTereshchenko/EUParliament_scraper/blob/main/src/crawler.py) is used to iterate over the dropdown menu on the [page](https://www.europarl.europa.eu/plenary/en/debates-video.html#sidesForm), and extract links with pertinent debates and presentations. 
-The links are then saved in a JSON file.
+The links are then saved in a JSON file. The [Scraper](https://github.com/DaryaTereshchenko/EUParliament_scraper/blob/main/src/scraper.py) is used to extract the text of the debates and presentations from the links saved in the JSON file. The extracted data is stored in a csv file.
 
 ## Example Usage - Crowler 
 Call the `crawler.py` file with the following arguments:
