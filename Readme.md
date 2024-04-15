@@ -1,4 +1,4 @@
-# *Web crawler and scraper for the European parliament debates.*
+# *Web crawler and scraper to extract European parliament debates.*
 
 ## Description
 The [Crawler](https://github.com/DaryaTereshchenko/EUParliament_scraper/blob/main/src/crawler.py) is a python programs, aims to be used for iterating over the dropdown menu on the [page](https://www.europarl.europa.eu/plenary/en/debates-video.html#sidesForm), and extracting the links of pertinent debates and statements. The links are then saved in a JSON file.
